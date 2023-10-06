@@ -1,12 +1,12 @@
 #include<stdio.h>
-int main()
+int main(void)
 {
-for(int i=48;i<=57;i++)
-{
-putchar(i);
-}
-putchar(10);
-return 0;
+	for (int i = 48; i <= 57; i++)
+	{
+		putchar(i);
+	}
+	putchar(10);
+	return (0);
 
 
 }
