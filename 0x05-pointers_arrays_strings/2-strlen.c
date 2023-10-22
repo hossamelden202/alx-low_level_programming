@@ -1,4 +1,3 @@
-#include "2-main.c"
 #include "main.h"
 /**
 * _strlen - get size of string

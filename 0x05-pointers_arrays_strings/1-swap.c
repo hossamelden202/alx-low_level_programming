@@ -1,4 +1,3 @@
-#include "1-main.c"
 #include "main.h"
 /**
  * swap_int - print

@@ -1,4 +1,3 @@
-#include "4-main.c"
 #include "main.h"
 #include "2-strlen.c"
 /**
