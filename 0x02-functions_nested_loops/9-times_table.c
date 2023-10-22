@@ -1,34 +1,45 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "main.h"
+
 /**
- * times_table - check the code
+ * times_table - prints tables
  * Return: void
  */
+
 void times_table(void)
 {
-	int i;
-	int j;
-	char buffer[3];
-    i = 0;
-	while (i < 10)
+	int a = 0;
+	int b;
+	int rep;
+
+	while (a <= 9)
 	{
-        j = 0;
-		while (j < 10)
+		b = 0;
+		while (b <= 9)
 		{
-			itoa((i * j), buffer, 10);
-            int k = 0;
-			while (k < strlen(buffer))
-				{
-                    putchar(buffer[k]);
-                     k++;
-                }
-			if (j < 9)
-				putchar(32);
-            j++;
+			rep = a * b;
+			if (b == 0)
+			{
+				_putchar('0' + rep);
+			}
+			else if (rep < 10)
+			{
+				_putchar(' ');
+				_putchar('0' + rep);
+			}
+			else
+			{
+				_putchar('0' + rep / 10);
+				_putchar('0' + rep % 10);
+			}
+
+			if (b < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			b++;
 		}
-		putchar(10);
-        i++;
+		_putchar('\n');
+		a++;
 	}
 }
