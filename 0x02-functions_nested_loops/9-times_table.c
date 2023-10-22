@@ -11,17 +11,24 @@ void times_table(void)
 	int i;
 	int j;
 	char buffer[3];
-
-	for (i = 0; i < 10; i++)
+    i = 0;
+	while (i < 10)
 	{
-		for (j = 0; j < 10; j++)
+        j = 0;
+		while (j < 10)
 		{
 			itoa((i * j), buffer, 10);
-			for (int k = 0; k < strlen(buffer); k++)
-				putchar(buffer[k]);
+            int k = 0;
+			while (k < strlen(buffer))
+				{
+                    putchar(buffer[k]);
+                     k++;
+                }
 			if (j < 9)
 				putchar(32);
+            j++;
 		}
 		putchar(10);
+        i++;
 	}
 }

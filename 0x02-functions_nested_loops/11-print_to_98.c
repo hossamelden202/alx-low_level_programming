@@ -14,18 +14,21 @@ void print_to_98(int n)
 	int j = 0;
 	char buffer[3];
 
-	for (; i <= 98; i++)
+	while (i <= 98)
 	{
 		itoa(i, buffer, 10);
-
-		for (j = 0; j < strlen(buffer); j++)
+		j = 0;
+		while (j < strlen(buffer))
+		{
 			putchar(buffer[j]);
-
+			j++;
+		}
 
 		if (i < 98)
 		{
 			putchar(',');
 			putchar(32);
 		}
+		i++;
 	}
 }

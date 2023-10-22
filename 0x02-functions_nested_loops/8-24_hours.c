@@ -6,17 +6,19 @@
 */
 void jack_bauer(void)
 {
-	for (int w = 48; w <= 50; w++)
+    int w = 48;
+	while (w <= 50)
 	{
-
-		for (int q = 48; q <= 57; q++)
+        int q = 48;
+		for (q <= 57)
 		{
 			if (q == 52)
 				break;
-			for (int i = 48; i < 54; i++)
+            int i = 48;
+			while (i < 54)
 			{
-
-				for (int j = 48; j <= 57; j++)
+                int j = 48; 
+				while (j <= 57)
 				{
 					putchar(w);
 					putchar(q);
@@ -24,8 +26,12 @@ void jack_bauer(void)
 					putchar(i);
 					putchar(j);
 					putchar(10);
+                     j++;
 				}
+                i++;
 			}
+            q++;
 		}
+        w++;
 	}
 }
