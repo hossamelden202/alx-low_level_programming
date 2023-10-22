@@ -18,7 +18,7 @@ void print_to_98(int n)
 	{
 		itoa(i, buffer, 10);
 		j = 0;
-		while (j < strlen(buffer))
+		while (j < (int)strlen(buffer))
 		{
 			putchar(buffer[j]);
 			j++;
