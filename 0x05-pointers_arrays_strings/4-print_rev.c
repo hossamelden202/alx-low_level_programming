@@ -1,10 +1,10 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
-* print_rev - chevkl
-*@s:char
-*Return:void
-*/
+ * print_rev - chevkl
+ *@s:char
+ *Return:void
+ */
 void print_rev(char *s)
 {
 
@@ -16,6 +16,6 @@ void print_rev(char *s)
 		_putchar(s[n - i - 1]);
 		i++;
 	}
-    _putchar(10);
+	_putchar(10);
 
 }

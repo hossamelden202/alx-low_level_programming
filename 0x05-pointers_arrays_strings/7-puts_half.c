@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_strlen.c"
 /**
  *puts_half - do
  *@str:int
