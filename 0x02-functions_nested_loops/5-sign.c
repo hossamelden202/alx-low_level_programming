@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *print_sign - check if it is positive or negative or zero
  *@n:type int

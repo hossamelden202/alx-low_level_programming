@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *_isalpha - check if it is alpha
  *@c:type is int

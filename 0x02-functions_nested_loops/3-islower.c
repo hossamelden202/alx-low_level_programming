@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
 * _islower - check if it is lowercase
 * @c:varible c type int
